@@ -1,0 +1,108 @@
+undefined
+ Song name: Angel
+Artist(s): Theory of a Deadman
+Album: Savages
+Link: https://api.spotify.com/v1/tracks/2qJkesdHu9sMMVFgkRkqhQ
+
+ Song name: Angel
+Artist(s): Shaggy
+Album: Hot Shot
+Link: https://api.spotify.com/v1/tracks/7xHsIaGEmiZunovi6oFtQz
+
+ Song name: Angel
+Artist(s): The Weeknd
+Album: Beauty Behind The Madness
+Link: https://api.spotify.com/v1/tracks/0wzPHTgOtFIDhk2rD3Au4x
+
+ Song name: Hollaback Girl
+Artist(s): Gwen Stefani
+Album: Love Angel Music Baby
+Link: https://api.spotify.com/v1/tracks/6RcQOut9fWL6FSqeIr5M1r
+
+ Song name: Lips Of An Angel
+Artist(s): Hinder
+Album: Extreme Behavior
+Link: https://api.spotify.com/v1/tracks/40LQiUUUKXVGyNs09lHVjW
+
+ Song name: Angel With A Shotgun
+Artist(s): The Cab
+Album: Symphony Soldier
+Link: https://api.spotify.com/v1/tracks/49rpdsNYJirTTf6p6mMvag
+
+ Song name: Angel
+Artist(s): Fifth Harmony
+Album: Fifth Harmony
+Link: https://api.spotify.com/v1/tracks/3YB3dT8zhaBxDTXlggRqh6
+
+ Song name: Only Angel
+Artist(s): Harry Styles
+Album: Harry Styles
+Link: https://api.spotify.com/v1/tracks/5Lbsc65org0b85kNsPkluY
+
+ Song name: Carita de Angel
+Artist(s): Ozuna
+Album: Odisea
+Link: https://api.spotify.com/v1/tracks/2wotylLBtyH2phGNhVhmUv
+
+ Song name: Fallen Angel
+Artist(s): Three Days Grace
+Album: Human
+Link: https://api.spotify.com/v1/tracks/2iptAVf9jZerlywLwiGhak
+
+ Song name: Angel Eyes
+Artist(s): Love and Theft
+Album: Love and Theft
+Link: https://api.spotify.com/v1/tracks/63w0QA1wiV7QhF9jeiHETF
+
+ Song name: Earth Angel
+Artist(s): The Penguins
+Album: The Original Hit Recording - Earth Angel
+Link: https://api.spotify.com/v1/tracks/75Mwp7YsQRk0ZBq1lOdL2T
+
+ Song name: Cosmic Angel - Acoustic From Capitol Studios
+Artist(s): Grizfolk
+Album: Cosmic Angel (Acoustic From Capitol Studios)
+Link: https://api.spotify.com/v1/tracks/5RVuBrXVLptAEbGJdSDzL5
+
+ Song name: Your Guardian Angel
+Artist(s): The Red Jumpsuit Apparatus
+Album: Don't You Fake It
+Link: https://api.spotify.com/v1/tracks/2Guz1b911CbpG8L92cnglI
+
+ Song name: Porch Swing Angel
+Artist(s): Muscadine Bloodline
+Album: Porch Swing Angel
+Link: https://api.spotify.com/v1/tracks/50QL2fqn6EDwpBUJ5QaQ4m
+
+ Song name: Gold Angel
+Artist(s): Minke
+Album: Gold Angel
+Link: https://api.spotify.com/v1/tracks/6NaRzSvVxqv2DC2eg039gB
+
+ Song name: Angel
+Artist(s): Sarah McLachlan
+Album: Surfacing
+Link: https://api.spotify.com/v1/tracks/3xZMPZQYETEn4hjor3TR1A
+
+ Song name: Thank You
+Artist(s): Dido
+Album: No Angel
+Link: https://api.spotify.com/v1/tracks/751gBcu62kORDelX7FV0mM
+
+ Song name: Angel
+Artist(s): Jack Johnson
+Album: Sleep Through The Static
+Link: https://api.spotify.com/v1/tracks/2vO1wr5wIEHqQmY4jWbuhi
+
+ Song name: Obsessed
+Artist(s): Mariah Carey
+Album: Memoirs of an imperfect Angel
+Link: https://api.spotify.com/v1/tracks/3IcIIZMMS7UArJJPtEHXG8
+Title: National Lampoon's Christmas Vacation
+Year: 1989
+IMDB rating: 7.6
+Rotten Tomatoes rating: 64%
+Country: USA
+Language: English
+Plot: The Griswold family's plans for a big family Christmas predictably turn into a big disaster.
+Actors: Chevy Chase, Beverly D'Angelo, Juliette Lewis, Johnny Galecki
