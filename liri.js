@@ -1,5 +1,6 @@
 //requirements and instantiations
 require("dotenv").config();
+var inquirer = require("inquirer");
 var keys = require("./keys.js");
 var Twitter = require('twitter');
 var Spotify = require('node-spotify-api');
@@ -8,9 +9,57 @@ var fs = require("fs");
 var spotify = new Spotify(keys.spotify);
 var client = new Twitter(keys.twitter);
 // captures user input
-var actionInput = process.argv[2];
-var dataInput = process.argv[3];
-takeAction(actionInput, dataInput);
+var iaction = process.argv[2];
+var idata = process.argv[3];
+// checks for input commands - if absent, prompts user for input
+if (iaction != undefined) {
+    takeAction(iaction, idata);
+} else {
+    var ActionInput = {
+        type: 'list',
+        name: 'actioninput',
+        message: 'What do you want to do?',
+        choices: ['Get tweets', 'Spotify a song', 
+        'Look up a movie', 'Do the default','clear history'] 
+    };
+
+    var dataInput = {
+        type: 'input',
+        name: 'datainput',
+        message: 'What is the title?'
+    }
+
+inquirer.prompt(ActionInput).then(function(answers) {
+        switch (answers.actioninput) {
+            case 'Get tweets':
+                iaction = 'my-tweets'
+                takeAction (iaction)
+                break;
+            case 'Spotify a song':
+                iaction = 'spotify-this-song'
+                inquirer.prompt(dataInput).then(function (answers1) {
+                    idata = answers1.datainput;
+                    takeAction (iaction, idata);
+                });
+                break;
+            case 'Look up a movie':
+                iaction = 'movie-this'
+                inquirer.prompt(dataInput).then(function (answers2) {
+                    idata = answers2.datainput;
+                    takeAction (iaction, idata);
+                } )                
+                break;
+            case 'Do the default':
+                iaction = 'do-what-it-says'
+                takeAction (iaction)
+                break;
+            case 'clear history':
+                iaction = 'clear-log'
+                takeAction (iaction)
+                break;
+        }   
+    });
+}
 
 function takeAction(action, data) {
     switch (action) {
@@ -30,7 +79,7 @@ function takeAction(action, data) {
             clearLog();
             break;
         default:
-            console.log("improper command")
+            console.log("Unrecognized command line")
             break;
     }
 }
@@ -82,7 +131,6 @@ function getMovie(title) {
     request("http://www.omdbapi.com/?t=" + title + "&plot=short" + keyString, function (error, response, body) {
         if (!error && response.statusCode === 200) {
             returnObject = JSON.parse(body);
-            console.log(JSON.parse(body, null, 2));
             var movieString = "\n Title: " + returnObject.Title + "\n" +
                 "Year: " + returnObject.Year + "\n" +
                 "IMDB rating: " + returnObject.imdbRating + "\n" +
@@ -109,5 +157,8 @@ function getRandomText() {
 function clearLog() {
     fs.writeFile('log.txt', "", err => {
         if (err) throw err;
+        else {
+            console.log("History is cleared")
+        }
     });
 }
