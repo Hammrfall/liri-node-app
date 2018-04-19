@@ -27,4 +27,4 @@ The functionality can be invoked by typing command lines, or by using the inquir
 
 Link to video overview of the application:
 
-(https://drive.google.com/open?id=1BVSo_K53-DeTl0MbqzPKn0Fpozy9Twnx "Application overview video")
+[Overview Video](https://drive.google.com/open?id=1BVSo_K53-DeTl0MbqzPKn0Fpozy9Twnx)
