@@ -1,6 +1,7 @@
 //requirements and instantiations
 require("dotenv").config();
 var inquirer = require("inquirer");
+var chalk = require("chalk");
 var keys = require("./keys.js");
 var Twitter = require('twitter');
 var Spotify = require('node-spotify-api');
@@ -20,7 +21,7 @@ if (iaction != undefined) {
         name: 'actioninput',
         message: 'What do you want to do?',
         choices: ['Get tweets', 'Spotify a song', 
-        'Look up a movie', 'Do the default','clear history'] 
+        'Look up a movie', 'Do the default','clear history'],
     };
 
     var dataInput = {
@@ -79,7 +80,7 @@ function takeAction(action, data) {
             clearLog();
             break;
         default:
-            console.log("Unrecognized command line")
+            console.log(chalk.red("Unrecognized command line"))
             break;
     }
 }
@@ -94,7 +95,7 @@ function getTweets() {
         fs.appendFile('log.txt', tweetsString, (err) => {
             if (err) throw err;
         })
-        console.log(tweetsString);
+        console.log(chalk.green(tweetsString));
     });
 }
 
@@ -119,7 +120,7 @@ function getSpotify(song) {
         fs.appendFile('log.txt', songString, (err) => {
             if (err) throw err;
         })
-        console.log(songString);
+        console.log(chalk.yellow(songString));
     });
 }
 
@@ -140,9 +141,9 @@ function getMovie(title) {
                 "Plot: " + returnObject.Plot + "\n" +
                 "Actors: " + returnObject.Actors + "\n"
             fs.appendFile('log.txt', movieString, (err) => {
-                if (err) throw err;
+                if (err){console.log(chalk.red("There was a problem processing your request"))}  //throw err;
             })
-            console.log(movieString)
+            console.log(chalk.blue(movieString))
         }
     });
 }
@@ -158,7 +159,7 @@ function clearLog() {
     fs.writeFile('log.txt', "", err => {
         if (err) throw err;
         else {
-            console.log("History is cleared")
+            console.log(chalk.magenta("History is cleared"))
         }
     });
 }

@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Hammrfall/liri-node-app#readme",
   "dependencies": {
+    "chalk": "^2.4.0",
     "dotenv": "^5.0.1",
     "inquirer": "^5.2.0",
     "inspect": "0.0.2",
